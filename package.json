@@ -1,0 +1,22 @@
+{
+  "name": "ts-challenge",
+  "version": "1.0.0",
+  "description": "원티드 프리온보딩 챌린지 - TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "jsdoc": "./node_modules/.bin/jsdoc ./src/index.js -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2.git"
+  },
+  "author": "Millie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues"
+  },
+  "homepage": "https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.0"
+  }
+}
