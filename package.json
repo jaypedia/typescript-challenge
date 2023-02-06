@@ -4,7 +4,7 @@
   "description": "원티드 프리온보딩 챌린지 - TypeScript",
   "main": "index.js",
   "scripts": {
-    "jsdoc": "./node_modules/.bin/jsdoc ./src/index.js -d build"
+    "jsdoc": "./node_modules/.bin/jsdoc ./src/index.js -d docs"
   },
   "repository": {
     "type": "git",
