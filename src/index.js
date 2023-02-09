@@ -1,6 +1,14 @@
 // @ts-check
 
 /**
+ * @description Tag object type definition
+ *
+ * @typedef {Object} Tag
+ * @property {number} id - Tag id
+ * @property {string} name - Tag name
+ */
+
+/**
  * @description Todo object type definition
  *
  * @typedef {Object} Todo
@@ -8,7 +16,7 @@
  * @property {string} content - Todo content
  * @property {boolean} isCompleted - Todo status
  * @property {string} category - Todo category
- * @property {string[]} [tags] - Todo tags
+ * @property {Tag[]} [tags] - Todo tags
  */
 
 /**
@@ -19,7 +27,7 @@
  * @function createTodo
  * @param {string} content
  * @param {string} category
- * @param {string[]} [tags = []]
+ * @param {Tag[]} [tags = []]
  * @returns {Promise<Todo | void>} - Returns a created todo
  * @throws {Error} - Throws an Error when failed to request
  */
@@ -40,7 +48,7 @@ const getTodos = async () => {};
  *
  * @async
  * @function getTodoById
- * @param {number} id
+ * @param {number} id - Todo id
  * @returns {Promise<Todo | void>} - Returns a todo matching the given id
  * @throws {Error} - Throws an Error when failed to request
  *
@@ -52,22 +60,23 @@ const getTodoById = async (id) => {};
  *
  * @async
  * @function updateTodo
- * @param {number} id
+ * @param {number} id - Todo id
  * @param {string} content
  * @param {boolean} isCompleted
  * @param {string} category
+ * @param {Tag[]} tags
  * @returns {Promise<Todo | void>} - Returns an updated todo
  * @throws {Error} - Throws an Error when failed to request
  */
-const updateTodo = async (id, content, isCompleted, category) => {};
+const updateTodo = async (id, content, isCompleted, category, tags) => {};
 
 /**
  * @description Update tags in a task.
  *
  * @async
  * @function updateTags
- * @param {number} id
- * @param {string[]} tags
+ * @param {number} id - Todo id
+ * @param {Tag[]} tags
  * @returns {Promise<Todo | void>} - Returns an updated todo
  * @throws {Error} - Throws an Error when failed to request
  */
@@ -88,7 +97,7 @@ const deleteAllTodos = async () => {};
  *
  * @async
  * @function deleteTodoById
- * @param {number} id
+ * @param {number} id - Todo id
  * @returns {Promise<void>}
  * @throws {Error} - Throws an Error when failed to request
  */
@@ -99,7 +108,7 @@ const deleteTodoById = async (id) => {};
  *
  * @async
  * @function deleteAllTags
- * @param {number} id
+ * @param {number} id - Todo id
  * @returns {Promise<void>}
  * @throws {Error} - Throws an Error when failed to request
  */
@@ -110,9 +119,9 @@ const deleteAllTags = async (id) => {};
  *
  * @async
  * @function deleteTag
- * @param {number} id
- * @param {string} tag
+ * @param {number} id - Todo id
+ * @param {number} tagId - Tag id
  * @returns {Promise<void>}
  * @throws {Error} - Throws an Error when failed to request
  */
-const deleteTag = async (id, tag) => {};
+const deleteTag = async (id, tagId) => {};
