@@ -7,13 +7,15 @@ TypeScript에 대한 이해도를 높이며 더욱 안정적인 코드를 작성
 
 <br>
 
+---
+
 ## Assignments
 
-### Assignment 1. Todo app을 JSDoc으로 문서화합니다.
+### Assignment 1. Todo app을 JSDoc으로 문서화
 
 #### [🔗 배포된 JSDoc 바로가기](https://jaypedia.github.io/wanted-pre-onboarding-challenge-fe-2/index.html)
 
-#### [📄 과제 요구사항](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/1)
+#### [📄 Assignment 1 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/1)
 
 #### JSDoc 실행 방법
 
@@ -22,6 +24,14 @@ npm install
 npm run jsdoc
 ```
 
-#### Reference
+<br>
 
-- [JSDoc 공식 홈페이지](https://jsdoc.app/)
+### Assignment 2. JSDoc으로 선언했던 것을 TypeScript Interface를 활용하여 모델링
+
+#### [📄 Assignment 2 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
+
+<br>
+
+### Assignments 3. 다른 사람이 설계한 TypeScript modeling에 따라 Todo app 구현
+
+#### [📄 Assignment 3 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
