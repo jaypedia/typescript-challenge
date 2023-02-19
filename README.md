@@ -21,9 +21,9 @@ This project is Pre-onboarding Frontend Challenge organized by Wanted that runs 
 
 ### Assignment 1. Documenting Todo app as JSDoc
 
-#### [🔗 Deployed JSDoc](https://jaypedia.github.io/wanted-pre-onboarding-challenge-fe-2/index.html)
+#### [📄 Assignment 1 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/1)
 
-#### [📄 Assignment 1 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/1)
+#### [🔗 Deployed JSDoc](https://jaypedia.github.io/wanted-pre-onboarding-challenge-fe-2/index.html)
 
 #### Usage
 
@@ -38,17 +38,17 @@ npm run jsdoc
 
 ### Assignment 2. Modeling JSDoc type declarations using the TypeScript Interface
 
-#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/blob/main/src/index.ts)
+#### [📄 Assignment 2 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
 
-#### [📄 Assignment 2 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
+#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/blob/main/src/index.ts)
 
 <br>
 
 ### Assignment 3. Implementing a Todo app based on TypeScript modeling designed by others
 
-#### [🔗 Result]()
+#### [📄 Assignment 3 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
 
-#### [📄 Assignment 3 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
+#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/blob/main/assignment3/index.ts)
 
 #### [💬 Feedback](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/pull/5)
 
@@ -56,8 +56,8 @@ npm run jsdoc
 
 ### Assignment 4. TypeScript Exercises
 
-#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/tree/main/ts-exercises)
+#### [📄 Assignment 4 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/6)
 
-#### [📄 Assignment 4 Issue](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/6)
+#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/tree/main/ts-exercises)
 
 <br>
