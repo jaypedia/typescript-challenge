@@ -269,3 +269,27 @@ const getObjectKeys = <T>(obj: T) => {
   return Object.keys(obj as {}) as (keyof T)[];
 };
 ```
+
+---
+
+## Exercise 7.
+
+### Problem
+
+![image](https://user-images.githubusercontent.com/85419343/219268333-19dcc083-434e-4b22-a77a-6daaa3db18bd.png)
+
+- Implement swap which receives 2 persons and returns them in the reverse order. The function itself is already there, actually. **We just need to provide it with proper types.**
+- **Also this function shouldn't necessarily be limited to just Person types, lets type it so that it works with any two types specified.**
+
+### Solution
+
+```ts
+export function swap<T1, T2>(v1: T1, v2: T2): [T2, T1] {
+  return [v2, v1];
+}
+```
+
+- TypeScript의 강력한 기능 중 하나인 Generics를 사용하여 문제를 해결했다.
+  - 타입을 마치 변수처럼 쓸 수 있다.(Type variable) 이것을 사용하여 값 자체가 아닌 type에 대해 작동하도록 한다. 타입을 "capture", 즉 붙잡을 수 있게 된다. `swap` 함수는 인자 2개의 타입에 대한 정보를 잃지 않는다.
+
+---
