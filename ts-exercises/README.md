@@ -293,3 +293,23 @@ export function swap<T1, T2>(v1: T1, v2: T2): [T2, T1] {
   - 타입을 마치 변수처럼 쓸 수 있다.(Type variable) 이것을 사용하여 값 자체가 아닌 type에 대해 작동하도록 한다. 타입을 "capture", 즉 붙잡을 수 있게 된다. `swap` 함수는 인자 2개의 타입에 대한 정보를 잃지 않는다.
 
 ---
+
+## Exercise 8.
+
+### Problem
+
+- Define type PowerUser which should have all fields from both User and Admin (except for type)
+  - also have type 'powerUser' without duplicating all the fields in the code
+
+### Solution
+
+```ts
+type PowerUser = Omit<Admin, 'type'> & Pick<User, 'occupation'> & { type: 'powerUser' };
+```
+
+- 'type'을 제외한 모든 필드를 가져오기 위해 Utility types와 여러 타입을 하나로 결합하는 [Intersection Types](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html#intersection-types)(&)를 활용했다.
+  - Admin에서는 name, age, role을 가져왔다.
+  - User에서는 occupation을 가져왔다.
+  - 추가적으로 필요한 필드(`{ type: 'powerUser' }`)를 추가해줬다.
+
+---
