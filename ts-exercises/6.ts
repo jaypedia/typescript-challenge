@@ -58,15 +58,18 @@ export function logPerson(person: Person) {
   );
 }
 
-type PersonOmitType = Partial<Omit<Person, 'type'>>;
+const getObjectKeys = <T>(obj: T) => {
+  return Object.keys(obj as {}) as (keyof T)[];
+};
 
-// Overload signature
+// Overload signature 1
 export function filterPersons(
   persons: Person[],
   personType: 'user',
   criteria: Partial<Omit<User, 'type'>>
 ): User[];
 
+// Overload signature 2
 export function filterPersons(
   persons: Person[],
   personType: 'admin',
@@ -77,12 +80,12 @@ export function filterPersons(
 export function filterPersons(
   persons: Person[],
   personType: string,
-  criteria: PersonOmitType
+  criteria: Partial<Omit<Person, 'type'>>
 ): unknown[] {
   return persons
     .filter((person) => person.type === personType)
     .filter((person) => {
-      let criteriaKeys = Object.keys(criteria) as (keyof PersonOmitType)[];
+      let criteriaKeys = getObjectKeys(criteria);
       return criteriaKeys.every((fieldName) => {
         return person[fieldName] === criteria[fieldName];
       });
@@ -91,6 +94,7 @@ export function filterPersons(
 
 export const usersOfAge23 = filterPersons(persons, 'user', { age: 23 });
 export const adminsOfAge23 = filterPersons(persons, 'admin', { age: 23 });
+export const adminTest = filterPersons(persons, 'admin', { role: 'Anti-virus engineer' });
 
 console.log('Users of age 23:');
 usersOfAge23.forEach(logPerson);
@@ -99,6 +103,8 @@ console.log();
 
 console.log('Admins of age 23:');
 adminsOfAge23.forEach(logPerson);
+
+adminTest.forEach(logPerson);
 
 // In case if you are stuck:
 // https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads
