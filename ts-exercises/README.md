@@ -1,5 +1,43 @@
 # 🏋🏻 [TypeScript Exercises](https://typescript-exercises.github.io/)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+  - [My goals](#my-goals)
+  - [Things to cover](#things-to-cover)
+  - [Rules and principles](#rules-and-principles)
+- [Exercise 1. Objects](#exercise-1-objects)
+  - [Problem](#problem)
+  - [Solution](#solution)
+- [Exercise 2. Union Types](#exercise-2-union-types)
+  - [Problem](#problem-1)
+  - [Solution](#solution-1)
+- [Exercise 3. `in` Operator](#exercise-3--in--operator)
+  - [Problem](#problem-2)
+  - [Solution](#solution-2)
+- [Exercise 4. Type Predicates](#exercise-4-type-predicates)
+  - [Problem](#problem-3)
+  - [Solution](#solution-3)
+- [Exercise 5. Utility Types - Partial](#exercise-5-utility-types---partial)
+  - [Problem](#problem-4)
+  - [Solution](#solution-4)
+- [Exercise 6. Function Overloads](#exercise-6-function-overloads)
+  - [Problem](#problem-5)
+  - [Solution](#solution-5)
+  - [Bonus Exercise](#bonus-exercise)
+  - [Bonus Exercise Solution](#bonus-exercise-solution)
+- [Exercise 7. Generics](#exercise-7-generics)
+  - [Problem](#problem-6)
+  - [Solution](#solution-6)
+- [Exercise 8. Utility Types - Omit, Pick](#exercise-8-utility-types---omit--pick)
+  - [Problem](#problem-7)
+  - [Solution](#solution-7)
+- [Exercise 9. Generics](#exercise-9-generics)
+  - [Problem](#problem-8)
+  - [Solution](#solution-8)
+
+<br>
+
 ## Introduction
 
 ### My goals
@@ -29,7 +67,7 @@
 
 ---
 
-## Exercise 1.
+## Exercise 1. Objects
 
 ### Problem
 
@@ -49,7 +87,7 @@ export type User = {
 
 ---
 
-## Exercise 2.
+## Exercise 2. Union Types
 
 ### Problem
 
@@ -66,7 +104,7 @@ export type Person = User | Admin;
 
 ---
 
-## Exercise 3.
+## Exercise 3. `in` Operator
 
 ### Problem
 
@@ -96,7 +134,7 @@ export function logPerson(person: Person) {
 
 ---
 
-## Exercise 4.
+## Exercise 4. Type Predicates
 
 ### Problem
 
@@ -123,7 +161,7 @@ export function isUser(person: Person): person is User {
 
 ---
 
-## Exercise 5.
+## Exercise 5. Utility Types - Partial
 
 ### Problem
 
@@ -192,7 +230,7 @@ Element implicitly has an 'any' type because expression of type 'keyof User' can
 
 ---
 
-## Exercise 6.
+## Exercise 6. Function Overloads
 
 ### Problem
 
@@ -272,7 +310,7 @@ const getObjectKeys = <T>(obj: T) => {
 
 ---
 
-## Exercise 7.
+## Exercise 7. Generics
 
 ### Problem
 
@@ -294,7 +332,7 @@ export function swap<T1, T2>(v1: T1, v2: T2): [T2, T1] {
 
 ---
 
-## Exercise 8.
+## Exercise 8. Utility Types - Omit, Pick
 
 ### Problem
 
@@ -311,5 +349,53 @@ type PowerUser = Omit<Admin, 'type'> & Pick<User, 'occupation'> & { type: 'power
   - Admin에서는 name, age, role을 가져왔다.
   - User에서는 occupation을 가져왔다.
   - 추가적으로 필요한 필드(`{ type: 'powerUser' }`)를 추가해줬다.
+
+---
+
+# Exercise 9. Generics
+
+### Problem
+
+```ts
+type UsersApiResponse =
+  | {
+      status: 'success';
+      data: User[];
+    }
+  | {
+      status: 'error';
+      error: string;
+    };
+
+type AdminsApiResponse =
+  | {
+      status: 'success';
+      data: Admin[];
+    }
+  | {
+      status: 'error';
+      error: string;
+    };
+```
+
+- Remove UserApiResponse and AdminsApiResponse types and use generic type ApiResponse
+  - to specify API response formats for each of the functions
+
+### Solution
+
+```ts
+export type ApiResponse<T> =
+  | {
+      status: 'success';
+      data: T;
+    }
+  | {
+      status: 'error';
+      error: string;
+    };
+```
+
+- generic type을 활용해 data 부분만 다르고 동일한 필드를 가진 두 개의 응답 타입을 하나로 합쳤다.
+  - 타입의 재사용성을 높일 수 있었다.
 
 ---
