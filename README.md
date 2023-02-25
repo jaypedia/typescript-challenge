@@ -21,15 +21,15 @@ This project is Pre-onboarding Frontend Challenge organized by Wanted that runs 
 
 ### Assignment 1. Documenting Todo app as JSDoc
 
-#### [📄 Assignment 1 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/1)
+#### [📄 Assignment 1 Requirements](https://github.com/jaypedia/wanted-typescript-challenge/issues/1)
 
-#### [🔗 Deployed JSDoc](https://jaypedia.github.io/wanted-pre-onboarding-challenge-fe-2/index.html)
+#### [🔗 Deployed JSDoc](https://jaypedia.github.io/wanted-typescript-challenge/)
 
 #### Usage
 
 ```
-git clone https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2.git
-cd wanted-pre-onboarding-challenge-fe-2
+git clone https://github.com/jaypedia/wanted-typescript-challenge.git
+cd wanted-typescript-challenge
 npm install
 npm run jsdoc
 ```
@@ -38,26 +38,26 @@ npm run jsdoc
 
 ### Assignment 2. Modeling JSDoc type declarations using the TypeScript Interface
 
-#### [📄 Assignment 2 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
+#### [📄 Assignment 2 Requirements](https://github.com/jaypedia/wanted-typescript-challenge/issues/3)
 
-#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/blob/main/src/index.ts)
+#### [🔗 Result](https://github.com/jaypedia/wanted-typescript-challenge/blob/main/src/index.ts)
 
 <br>
 
 ### Assignment 3. Implementing a Todo app based on TypeScript modeling designed by others
 
-#### [📄 Assignment 3 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/3)
+#### [📄 Assignment 3 Requirements](https://github.com/jaypedia/wanted-typescript-challenge/issues/3)
 
-#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/blob/main/assignment3/index.ts)
+#### [🔗 Result](https://github.com/jaypedia/wanted-typescript-challenge/blob/main/assignment3/index.ts)
 
-#### [💬 Feedback](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/pull/5)
+#### [💬 Feedback](https://github.com/jaypedia/wanted-typescript-challenge/pull/5)
 
 <br>
 
 ### Assignment 4. TypeScript Exercises
 
-#### [📄 Assignment 4 Requirements](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/issues/6)
+#### [📄 Assignment 4 Requirements](https://github.com/jaypedia/wanted-typescript-challenge/issues/6)
 
-#### [🔗 Result](https://github.com/jaypedia/wanted-pre-onboarding-challenge-fe-2/tree/main/ts-exercises)
+#### [🔗 Result](https://github.com/jaypedia/wanted-typescript-challenge/tree/main/ts-exercises)
 
 <br>
